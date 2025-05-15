@@ -1,0 +1,99 @@
+.about-main{
+    height: 60vh;
+}
+
+.cv:hover{
+    transform: scale(1.1);
+}
+
+.about-data{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.data-item p{
+    font-weight: bold;
+}
+
+.data-item span{
+    font-weight: lighter;
+    color: var(--text-black-700);
+    font-size: 18px;
+}
+
+.about-data .data-item{
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+
+.about-data .data-item p{
+    border-bottom: 1px solid var(--bg-black-50);
+}
+
+.skills-container{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin: -400px 0 0 1050px;
+}
+
+.skills-container .skills-item{
+    flex: 0 0 100%;
+    width: 100%;
+}
+
+.skills-container .skills-item h5{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.skills-container h2{
+    position: relative;
+}
+
+.skills-container h2::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 70px;
+    background: var(--text-red);
+    top: 100%;
+    left: 0;
+}
+
+.skills-container h2::after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 50px;
+    background: var(--text-red);
+    left: 0;
+    top: 100%;
+    margin-top: 8px;
+}
+
+.skills-container .skills-item .progress{
+    background: var(--bg-black-50);
+    border-radius: 4px;
+    height: 8px;
+    width: 100%;
+    position: relative;
+    top: -25px;
+}
+
+.skills-container .skills-item .progress .progress-in{
+    position: absolute;
+    background: var(--text-red);
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+}
+
+.skills-container .skills-item .progress .skill-percent{
+    position: absolute;
+    top: -37px;
+    right: 0;
+    font-weight: 400;
+}
+
